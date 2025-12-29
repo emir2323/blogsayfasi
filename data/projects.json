@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Croffle Waffle & Coffee",
+        "description": "Kore sokak lezzeti Croffle'ı Türkiye ile buluşturan, franchise odaklı modern bir marka web sitesi. Mobil öncelikli yaklaşımla kullanıcı deneyimini ön planda tutan bir proje.",
+        "url": "https:\/\/croffle.com.tr\/",
+        "image": "assets\/img\/croffle-preview.jpg",
+        "badge": "Marka · Yiyecek & İçecek",
+        "role": "Frontend geliştirici, performans ve UX iyileştirmeleri",
+        "highlights": "Mobil öncelikli tasarım, menü vurgusu, franchise odaklı akış",
+        "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "SEO"
+        ]
+    },
+    {
+        "title": "Psikoloji Merkezi",
+        "description": "Güven ve sakinlik hissi veren, kullanıcı dostu bir psikoloji merkezi web sitesi. Randevu süreçleri ve terapi türlerinin net bir şekilde anlatıldığı profesyonel bir platform.",
+        "url": "http:\/\/psikologmerkezim.com.tr\/",
+        "image": "assets\/img\/psikoloji-preview.jpg",
+        "badge": "Sağlık · Psikoloji",
+        "role": "Tasarım ve geliştirme",
+        "highlights": "Güven veren arayüz, randevu sistemi, sade tasarım",
+        "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Responsive"
+        ]
+    },
+    {
+        "title": "Anahtarcı Aziz - Çilingir Hizmetleri",
+        "description": "7\/24 profesyonel çilingir ve anahtarcı hizmeti sunan modern bir web sitesi. Hızlı iletişim butonları, WhatsApp entegrasyonu ve kullanıcı dostu arayüz ile acil durumlarda müşterilere kolay erişim sağlayan profesyonel bir platform.",
+        "url": "#",
+        "image": "assets\/img\/cilingir-preview.jpg",
+        "badge": "Hizmet · Çilingir & Anahtarcı",
+        "role": "Tasarım ve geliştirme",
+        "highlights": "7\/24 hizmet vurgusu, hızlı iletişim butonları, mobil öncelikli tasarım, WhatsApp entegrasyonu",
+        "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Responsive",
+            "WhatsApp API"
+        ]
+    },
+    {
+        "title": "Dentist Network",
+        "description": "Bu web sitesi, modern diş hekimliği hizmetlerini hastalara hızlı ve kolay bir şekilde sunmak amacıyla hazırlanmıştır. Kullanıcı dostu tasarımı sayesinde randevu alma, hizmetler hakkında bilgi edinme ve merkezle iletişime geçme işlemleri pratik hale getirilmiştir.",
+        "url": "https:\/\/dishekimim.xn--emiryldrm-zpbcb.com.tr\/",
+        "image": "assets\/img\/dentist-prewiev.png",
+        "badge": "Diş Sağlığı",
+        "role": "Tasarım ve geliştirme ve Full Stack",
+        "highlights": "Hekimlerin randevuları kolayca takip edebilmesi",
+        "tech": [
+            "React",
+            "TypeScript"
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "starter": {
+        "old_price": "4901",
+        "new_price": "3500",
+        "discount": "29"
+    },
+    "professional": {
+        "old_price": "9900",
+        "new_price": "8000",
+        "discount": "19"
+    },
+    "custom": {
+        "text": "Teklif"
+    }
+}

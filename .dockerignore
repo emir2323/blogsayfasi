@@ -1,0 +1,10 @@
+.git
+.gitignore
+.vscode
+.idea
+start-server.bat
+start-server.sh
+README.md
+old
+backup
+*.log

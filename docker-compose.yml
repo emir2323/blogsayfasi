@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: blogsayfasi
+    ports:
+      - "80:80"
+    volumes:
+      # Kalıcı veri depolama - ayarlar ve blog verileri
+      - ./data:/var/www/html/data
+      # Kalıcı dosya depolama - CV ve yüklenen dosyalar
+      - ./assets/files:/var/www/html/assets/files
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Istanbul

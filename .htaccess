@@ -1,0 +1,56 @@
+# PHP ayarları
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+</IfModule>
+
+# URL Rewriting - Temiz URL'ler için
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # RewriteBase /blogsayfasi/
+    
+    # Mevcut dosya veya klasör ise rewrite yapma
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Ana Sayfa
+    RewriteRule ^Anasayfa/?$ index.php [L,QSA]
+    RewriteRule ^anasayfa/?$ index.php [L,QSA]
+    
+    # Projelerim
+    RewriteRule ^Projelerim/?$ projelerim.php [L,QSA]
+    RewriteRule ^projelerim/?$ projelerim.php [L,QSA]
+    
+    # Blog
+    RewriteRule ^Blog/?$ blog.php [L,QSA]
+    RewriteRule ^blog/?$ blog.php [L,QSA]
+    
+    # Ana sayfa için root URL
+    RewriteRule ^$ index.php [L]
+    
+    # Blog yazısı için temiz URL
+    RewriteRule ^blog/([a-z0-9-]+)/?$ blog-post.php?slug=$1 [L,QSA]
+    
+    # KVKK ve Çerez Politikası
+    RewriteRule ^KVKK-Aydinlatma-Metni/?$ kvkk-aydinlatma-metni.php [L,QSA]
+    RewriteRule ^kvkk-aydinlatma-metni/?$ kvkk-aydinlatma-metni.php [L,QSA]
+    RewriteRule ^Cerez-Politikasi/?$ cerez-politikasi.php [L,QSA]
+    RewriteRule ^cerez-politikasi/?$ cerez-politikasi.php [L,QSA]
+</IfModule>
+
+# Güvenlik başlıkları
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Dosya erişim koruması
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Varsayılan index dosyası
+DirectoryIndex index.php index.html
+

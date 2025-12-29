@@ -1,0 +1,21 @@
+# Admin dizini için yapılandırma
+
+# DirectoryIndex - /admin/ URL'i için varsayılan dosya
+DirectoryIndex login.php
+
+# Hata sayfaları
+ErrorDocument 403 /admin/login.php
+ErrorDocument 404 /admin/login.php
+
+# PHP ayarları
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+    php_value error_log ../error.log
+</IfModule>
+
+# Session ayarları
+<IfModule mod_php.c>
+    php_value session.cookie_httponly 1
+    php_value session.use_only_cookies 1
+</IfModule>

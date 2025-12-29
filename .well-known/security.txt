@@ -1,0 +1,3 @@
+Contact: mailto:info@ornek.com
+Preferred-Languages: tr, en
+

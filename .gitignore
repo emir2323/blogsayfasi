@@ -1,0 +1,5 @@
+deploy_package.zip
+deploy_package_new.zip
+.DS_Store
+Thumbs.db
+*.log

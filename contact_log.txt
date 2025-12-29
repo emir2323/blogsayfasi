@@ -1,0 +1,12 @@
+2025-12-16 17:23:26 - Gönderen: Emir Yıldlrım (yemir6924@gmail.com)
+Mesaj: sdsdsdsdsdsdsdsdsd
+Mail Gönderimi: BAŞARISIZ
+Hata: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+--------------------------------------------------
+
+2025-12-16 17:25:43 - Gönderen: Emir Yıldlrım (yemir6924@gmail.com)
+Mesaj: ssssssssssssssss
+Mail Gönderimi: BAŞARISIZ - Localhost
+Hata: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+--------------------------------------------------
+

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kurumsal Web Geliştirme</title>
+    <meta
+      name="description"
+      content="Modern kurumsal web siteleri ve web geliştirme hizmetleri."
+    />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Kurumsal Web Geliştirme"
+    />
+    <meta
+      property="og:description"
+      content="Kurumsal web siteleri ve web geliştirme hizmetleri."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/assets/img/og-placeholder.png" />
+    <meta name="theme-color" content="#0b0d12" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="http://localhost/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Markanız",
+        "url": "http://localhost/",
+        "logo": "http://localhost/assets/img/logo.png"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">Emir Yıldırım</div>
+        <nav class="nav">
+          <a href="#anasayfa">Ana Sayfa</a>
+          <a href="#hizmetler">Hizmetler</a>
+          <a href="#portfolyo">Portfolyo</a>
+          <a href="#fiyatlar">Fiyatlar</a>
+          <a href="#sss">SSS</a>
+          <a href="#iletisim">İletişim</a>
+        </nav>
+        <div class="header-actions">
+          <button class="lang-toggle" aria-label="Dili Değiştir" data-lang="tr">
+            TR
+          </button>
+          <button class="theme-toggle" aria-label="Tema Değiştir">🌓</button>
+          <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="contact-floating" aria-label="Hızlı İletişim">
+      <a
+        class="cf-item"
+        href="tel:+905444948651"
+        title="Ara: +90 544 494 86 51"
+      >
+        <span class="cf-icon" aria-hidden="true">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C11.4 21 3 12.6 3 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <span class="cf-text">+90 544 494 86 51</span>
+      </a>
+      <a
+        class="cf-item whatsapp-link"
+        href="#"
+        data-phone="+905444948651"
+        title="WhatsApp"
+      >
+        <span class="cf-icon cf-wa" aria-hidden="true">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#25D366"
+              d="M19.11 17.5c-.27-.13-1.58-.78-1.83-.87-.25-.09-.43-.13-.62.13-.18.27-.71.87-.87 1.05-.16.18-.32.2-.59.07-.27-.13-1.13-.42-2.15-1.34-.79-.7-1.32-1.56-1.48-1.83-.16-.27-.02-.42.11-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.13-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47l-.53-.01c-.18 0-.48.07-.74.34-.25.27-.97.95-.97 2.32s.99 2.69 1.13 2.88c.14.18 1.95 2.98 4.73 4.17.66.29 1.18.47 1.58.6.66.21 1.26.18 1.74.11.53-.08 1.58-.65 1.8-1.27.22-.62.22-1.15.16-1.27-.06-.11-.24-.18-.5-.31z"
+            />
+            <path
+              fill="#25D366"
+              d="M26.57 5.43C23.72 2.58 20.04 1 16.08 1 8.07 1 1.52 7.55 1.52 15.56c0 2.5.65 4.93 1.89 7.07L1 31l8.57-2.25A15.5 15.5 0 0016.08 30c8.01 0 14.56-6.55 14.56-14.56 0-3.96-1.58-7.64-4.07-10.01zm-10.49 22.7a12.96 12.96 0 01-6.61-1.81l-.47-.28-5.09 1.34 1.36-4.96-.31-.51a12.98 12.98 0 1111.12 6.22z"
+            />
+          </svg>
+        </span>
+        <span class="cf-text">WhatsApp</span>
+      </a>
+      <a
+        class="cf-item"
+        href="mailto:emir76931@gmail.com"
+        title="E-posta: emir76931@gmail.com"
+      >
+        <span class="cf-icon cf-gmail" aria-hidden="true">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#EA4335"
+              d="M12 13.5L1.5 6v12A2.5 2.5 0 004 20.5h16A2.5 2.5 0 0022.5 18V6L12 13.5z"
+            />
+            <path
+              fill="#34A853"
+              d="M1.5 6l10.5 7.5L22.5 6v-1A2.5 2.5 0 0020 2.5H4A2.5 2.5 0 001.5 5v1z"
+            />
+            <path fill="#FBBC05" d="M1.5 6V5A2.5 2.5 0 014 2.5h.5v5.4L1.5 6z" />
+            <path
+              fill="#4285F4"
+              d="M22.5 6V5A2.5 2.5 0 0020 2.5h-.5v5.4l3-1.9z"
+            />
+          </svg>
+        </span>
+        <span class="cf-text">emir76931@gmail.com</span>
+      </a>
+    </div>
+
+    <main id="anasayfa">
+      <section class="hero container">
+        <div class="hero-content">
+          <h1 id="hero-title">
+            Merhaba, ben
+            <span class="accent" id="role-rotator"
+              >Dijital Çözüm Ortağınız</span
+            >
+            Emir Yıldırım
+          </h1>
+          <p class="subtitle" id="hero-subtitle">
+            Kurumsal Web Siteleri • Web Geliştirme
+          </p>
+          <div class="intro-text">
+            <p>Hoş geldiniz!</p>
+            <p>
+              Burada sizlere, modern ve kullanıcı dostu kurumsal web siteleri
+              projelerimi sunuyorum.
+            </p>
+            <p>
+              Her projemde; estetik, güvenilirlik ve performansı ön planda
+              tutarak işletmenize değer katmayı hedefliyorum.
+            </p>
+            <p>
+              Geliştirdiğim çözümler; markanızı dijital dünyada güçlü bir
+              şekilde temsil etmeniz için tasarlandı.
+            </p>
+            <p>
+              Ayrıca, sunduğum hizmetlerin fiyat detaylarını şeffaf bir şekilde
+              inceleyebilirsiniz.
+            </p>
+            <p>Siz hayal edin, ben teknolojiyi sizin için şekillendireyim.</p>
+            <p>Dijital yolculuğunuza birlikte güç katmak için buradayım.</p>
+          </div>
+          <div class="cta-group">
+            <a
+              class="btn primary"
+              id="cta-whatsapp"
+              data-phone="+905444948651"
+              href="#"
+              >Whatsapp'tan Yaz</a
+            >
+            <a
+              class="btn outline"
+              href="mailto:info@ornek.com?subject=Teklif%20Talebi"
+              id="cta-quote"
+              >Teklif Al</a
+            >
+          </div>
+        </div>
+        <div class="hero-aside">
+          <img
+            src="assets/img/profile.jpg"
+            alt="Emir Yıldırım"
+            loading="lazy"
+            class="hero-photo"
+          />
+        </div>
+      </section>
+
+      <section id="portfolyo" class="section container">
+        <h2>Portfolyo</h2>
+        <div class="grid portfolio-grid">
+          <figure class="portfolio-item reveal">
+            <img src="assets/img/p1.jpg" alt="Proje 1" loading="lazy" />
+            <figcaption>Kurumsal Web Sitesi</figcaption>
+          </figure>
+          <figure class="portfolio-item reveal">
+            <img src="assets/img/p2.jpg" alt="Proje 2" loading="lazy" />
+            <figcaption>E-Ticaret Arayüzü</figcaption>
+          </figure>
+          <figure class="portfolio-item reveal">
+            <img src="assets/img/p3.jpg" alt="Proje 3" loading="lazy" />
+            <figcaption>Kampanya Landing</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="fiyatlar" class="section container">
+        <h2 id="pricing-title">Fiyatlar</h2>
+        <div class="pricing">
+          <article class="price-card">
+            <h3>Başlangıç</h3>
+            <p class="price">₺4.900</p>
+            <ul>
+              <li>Tek sayfa site</li>
+              <li>Mobil uyumlu</li>
+              <li>Temel SEO</li>
+              <li>Hızlı teslim (1 hafta)</li>
+              <li>Standart güvenlik ayarları</li>
+            </ul>
+            <a class="btn primary" href="#iletisim">Başla</a>
+          </article>
+          <article class="price-card highlight">
+            <h3>Profesyonel</h3>
+            <p class="price">₺9.900</p>
+            <ul>
+              <li>Çok sayfalı site</li>
+              <li>Hız optimizasyonu (Core Web Vitals)</li>
+              <li>Gelişmiş SEO ve şema işaretlemeleri</li>
+              <li>Blog/İçerik altyapısı</li>
+              <li>İletişim formu ve WhatsApp entegrasyonu</li>
+              <li>Temel yönetim paneli</li>
+            </ul>
+            <a class="btn primary" href="#iletisim">Seç</a>
+          </article>
+          <article class="price-card">
+            <h3>Özel</h3>
+            <p class="price">Teklif</p>
+            <ul>
+              <li>Özel tasarım ve marka kiti</li>
+              <li>3. parti entegrasyonlar (Ödeme, CRM vb.)</li>
+              <li>Ölçeklenebilir altyapı ve CDN</li>
+              <li>Öncelikli destek ve bakım</li>
+            </ul>
+            <a class="btn primary" href="#iletisim">Teklif Al</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="sss" class="section container">
+        <h2 id="faq-title">Sık Sorulan Sorular</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              Teslim süresi nedir?
+            </button>
+            <div class="accordion-panel">
+              <p>Proje kapsamına göre 1-4 hafta arasında değişir.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              Ödeme nasıl yapılır?
+            </button>
+            <div class="accordion-panel">
+              <p>Başlangıçta %50, teslimde kalan tutar alınır.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              Destek veriyor musunuz?
+            </button>
+            <div class="accordion-panel">
+              <p>Yayın sonrası belirlenen süre boyunca destek sağlanır.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              Bakım ve güncelleme hizmeti sunuyor musunuz?
+            </button>
+            <div class="accordion-panel">
+              <p>
+                Evet, düzenli bakım, güvenlik güncellemeleri ve yeni özellik
+                geliştirmeleri sunuyoruz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hizmetler" class="section container">
+        <h2 id="services-title">Hizmetler</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Kurumsal Web Sitesi Geliştirme</h3>
+            <p>Hızlı, güvenilir ve SEO dostu kurumsal web çözümleri.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="surec" class="section container">
+        <h2>Nasıl Çalışıyorum?</h2>
+        <ol class="steps">
+          <li>
+            <strong>Ön Görüşme</strong>
+            <span>İhtiyaçlarınızı dinler, hedefleri netleştiririz.</span>
+          </li>
+          <li>
+            <strong>Planlama</strong>
+            <span>Yol haritasını ve takvimi belirleriz.</span>
+          </li>
+          <li>
+            <strong>Uygulama</strong>
+            <span>Tasarım ve geliştirme sürecini yürütürüm.</span>
+          </li>
+          <li>
+            <strong>Teslim & Destek</strong>
+            <span>Revizeleri tamamlar, yayına alır ve destek veririm.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="iletisim" class="section container contact">
+        <h2 id="contact-title">İletişim</h2>
+        <div class="contact-grid">
+          <div class="contact-cta">
+            <a
+              class="btn primary"
+              id="contact-whatsapp"
+              data-phone="905000000000"
+              href="#"
+              >Whatsapp</a
+            >
+            <a class="btn outline" href="mailto:info@ornek.com">E-posta</a>
+          </div>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/your_id"
+            method="POST"
+          >
+            <label
+              ><span id="contact-name-label">Ad Soyad</span>
+              <input type="text" name="ad" required />
+            </label>
+            <label
+              ><span id="contact-email-label">E-posta</span>
+              <input type="email" name="eposta" required />
+            </label>
+            <label
+              ><span id="contact-message-label">Mesajınız</span>
+              <textarea name="mesaj" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn primary" id="contact-send">
+              Gönder
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Markanız. Tüm hakları saklıdır.</span>
+        <nav class="footer-nav">
+          <a href="#anasayfa">Ana Sayfa</a>
+          <a href="#hizmetler">Hizmetler</a>
+          <a href="#iletisim">İletişim</a>
+        </nav>
+      </div>
+    </footer>
+
+    <button id="to-top" aria-label="Yukarı Çık">↑</button>
+
+    <div
+      id="modal"
+      class="modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-content" role="document">
+        <button class="modal-close" aria-label="Kapat" data-close>✕</button>
+        <div class="modal-body" id="modal-body"></div>
+      </div>
+    </div>
+
+    <div
+      id="cookie-consent"
+      class="cookie-consent"
+      role="dialog"
+      aria-live="polite"
+    >
+      <div class="cookie-inner container">
+        <span>Bu site deneyiminizi iyileştirmek için çerezler kullanır.</span>
+        <div class="cookie-actions">
+          <button class="btn outline" id="cookie-decline">Reddet</button>
+          <button class="btn primary" id="cookie-accept">Kabul Et</button>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="assets/js/main.js"></script>
+  </body>
+</html>
