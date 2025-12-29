@@ -4,7 +4,9 @@ define('SITE_NAME', 'Emir Yıldırım');
 define('SITE_EMAIL', 'emir76931@gmail.com');
 define('SITE_PHONE', '+905444948651');
 // Base URL detection
-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+$isHttps = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') 
+           || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
+$protocol = $isHttps ? "https" : "http";
 $host = $_SERVER['HTTP_HOST'];
 // If running on localhost/blogsayfasi, keep it. If on domain, use root.
 if (strpos($host, 'localhost') !== false) {
