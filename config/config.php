@@ -31,5 +31,3 @@ if (file_exists($settingsPath)) {
 define('LINKEDIN_URL', $settings['linkedin_url'] ?? 'https://www.linkedin.com/in/emir-y%C4%B1ld%C4%B1r%C4%B1m-7a5585269/');
 define('GITHUB_URL', $settings['github_url'] ?? 'https://github.com/emir2323');
 define('CV_FILE', $settings['cv_file'] ?? 'assets/files/cv.pdf'); // CV dosyanızın yolu
-?>
-
