@@ -16,22 +16,11 @@ define('SETTINGS_DATA_FILE', __DIR__ . '/../data/settings.json');
 // Session yapılandırması - Production uyumluluğu için
 if (session_status() === PHP_SESSION_NONE) {
     // Session cookie ayarları
-    ini_set('session.cookie_httponly', 1);
-    ini_set('session.use_only_cookies', 1);
-    ini_set('session.cookie_samesite', 'Lax');
-    
-    // Session path ayarları
-    $sessionPath = '/';
-    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
-        $sessionPath = '/blogsayfasi/';
-    }
-    
     session_set_cookie_params([
-        'lifetime' => 0,
-        'path' => $sessionPath,
-        'domain' => $_SERVER['HTTP_HOST'],
-        'secure' => (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') 
-                    || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https'),
+        'lifetime' => 86400,
+        'path' => '/',
+        'domain' => '', // Otomatik
+        'secure' => false, // SSL zorunluluğunu geçici olarak kaldır
         'httponly' => true,
         'samesite' => 'Lax'
     ]);
