@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if ($username === ADMIN_USERNAME && $password === ADMIN_PASSWORD) {
         // Session güvenliği için ID'yi yenile
-        session_regenerate_id(true);
+        // session_regenerate_id(true);
         $_SESSION['admin_logged_in'] = true;
         $_SESSION['admin_login_time'] = time();
         
